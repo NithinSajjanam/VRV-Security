@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VRV Security</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png"/>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>VRV Security</h2>
+      <ul>
+        <li><a href="#" onclick="showSection('users')">User Management</a></li>
+        <li><a href="#" onclick="showSection('roles')">Role Management</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- User Management Section -->
+      <div id="users" class="section">
+        <h2>User Management</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="userTable">
+            <!-- Dynamic rows inserted by JavaScript -->
+          </tbody>
+        </table>
+        <button onclick="addUser()">Add User</button>
+      </div>
+
+      <!-- Role Management Section -->
+      <div id="roles" class="section" style="display: none;">
+        <h2>Role Management</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Permissions</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="roleTable">
+            <!-- Dynamic rows inserted by JavaScript -->
+          </tbody>
+        </table>
+        <button onclick="addRole()">Add Role</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

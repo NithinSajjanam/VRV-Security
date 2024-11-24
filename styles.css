@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light neutral background */
+    color: #333; /* Dark gray text for readability */
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 240px;
+    background: linear-gradient(180deg, #1a2a6c, #b21f1f, #fdbb2d); /* Gradient colors inspired by theme */
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fdfdfd;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .sidebar ul li a:hover {
+    background: #4c669f; /* Slightly lighter blue for hover */
+    color: white;
+  }
+  
+  /* Content */
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* Section Visibility */
+  .section {
+    display: none;
+  }
+  
+  .section.active {
+    display: block;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  table th {
+    background: #1a2a6c; /* Dark blue for header */
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background: #f8f9fa; /* Light gray for even rows */
+  }
+  
+  table tr:hover {
+    background: #fdbb2d; /* Highlight with theme color */
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 10px 15px;
+    background: #b21f1f; /* Vibrant red from theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #e63946; /* Slightly lighter red for hover */
+    transform: scale(1.05); /* Subtle zoom on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 180px;
+    }
+  
+    .content {
+      margin-left: 200px;
+      padding: 15px;
+    }
+  
+    table th, table td {
+      padding: 8px;
+    }
+  }
+  
